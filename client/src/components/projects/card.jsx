@@ -26,15 +26,18 @@ const Card = (props) => {
           <div className={style.cardVisual1}>
             <div className={style.cardDescription}>
               <h3>Stuff</h3>
-              <img className={style.cardImage} src="https://www.w3schools.com/w3images/nature.jpg" alt="Card for Testing" />
+              <img className={style.cardImage} src="http://imageportfolio.s3.amazonaws.com/night_hill.jpg" alt="Card for Testing" />
             </div>
           </div>
           <div className={style.cardVisual2}>
             <div className={style.cardDescription}>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ducimus, et ad. Reiciendis quas omnis impedit nam harum, corrupti iusto!
-              </p>
+              <p>React.js</p>
+              <hr />
+              <p>Node.js</p>
+              <hr />
+              <p>MongoDB</p>
+              <hr />
+              <p>Webpack</p>
               <a href="#">Read More</a>
             </div>
           </div>
