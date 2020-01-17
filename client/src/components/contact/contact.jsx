@@ -1,7 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import style from '../../../../stylesheet.css';
-// import key from './email.jsx';
+import key from '../../../../email.jsx';
 
 
 class ContactUs extends React.Component {
@@ -26,7 +26,7 @@ class ContactUs extends React.Component {
       from_name: name,
       message_html: message,
     };
-    emailjs.send('marvin_gmail', 'template_YUkmXCTa', templateParams)
+    emailjs.send('marvin_gmail', 'template_YUkmXCTa', templateParams, key)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
       }, (err) => {
