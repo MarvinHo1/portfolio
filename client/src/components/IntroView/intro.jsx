@@ -19,7 +19,7 @@ class IntroPage extends React.Component {
           </video>
           <div className={style.introButtonContainer}>
             <p>
-              Welcome to my profile! my name is Marvin Ho.
+              Welcome to my portfolio! my name is Marvin Ho.
               I am a fullstack engineer.
             </p>
             <button type="button" className={style.clickMeButton}>Click Me!</button>

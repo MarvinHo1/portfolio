@@ -5,6 +5,7 @@ import NavBar from './IntroView/navBar.jsx';
 import AboutMeAnimations from './aboutMe/about.jsx';
 import Card from './projects/card.jsx';
 import style from '../../../stylesheet.css';
+import ContactUs from './contact/contact.jsx'
 
 class Portfolio extends React.Component {
   constructor(props) {
@@ -35,6 +36,7 @@ class Portfolio extends React.Component {
         <NavBar />
         <AboutMeAnimations />
         <Card />
+        <ContactUs />
       </div>
     );
   }
