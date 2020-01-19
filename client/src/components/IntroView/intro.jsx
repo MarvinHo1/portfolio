@@ -6,8 +6,15 @@ class IntroPage extends React.Component {
     super(props);
     this.state = {
       open: false,
-      // hideOrShowHambugerDropDown: "nav"
     };
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  // eslint-disable-next-line class-methods-use-this
+  handleScroll() {
+    const element = document.getElementById('contactComponent');
+    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+    console.log('yup...');
   }
 
   render() {
@@ -18,11 +25,11 @@ class IntroPage extends React.Component {
             <source src="https://imageportfolio.s3.amazonaws.com/Night_BG.mp4" type="video/mp4" />
           </video>
           <div className={style.introButtonContainer}>
-            <p>
+            <p className={style.text}>
               Welcome to my portfolio! my name is Marvin Ho.
               I am a fullstack engineer.
             </p>
-            <button type="button" className={style.clickMeButton}>Click Me!</button>
+            <button type="button" className={style.clickMeButton} onClick={this.handleScroll}> Click Me! </button>
           </div>
         </div>
       </div>

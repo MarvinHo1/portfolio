@@ -14,13 +14,14 @@ class ContactUs extends React.Component {
     };
     this.sendEmail = this.sendEmail.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.resetEmailMessage = this.resetEmailMessage.bind(this);
   }
 
   // eslint-disable-next-line class-methods-use-this
   sendEmail(e) {
     e.preventDefault();
     const { name, email, message } = this.state;
-    let templateParams = {
+    const templateParams = {
       to_name: 'Marvin',
       contact_email: email,
       from_name: name,
@@ -28,6 +29,7 @@ class ContactUs extends React.Component {
     };
     emailjs.send('marvin_gmail', 'template_YUkmXCTa', templateParams, key)
       .then((response) => {
+        this.resetEmailMessage();
         console.log('SUCCESS!', response.status, response.text);
       }, (err) => {
         console.log('FAILED...', err);
@@ -40,11 +42,20 @@ class ContactUs extends React.Component {
     });
   }
 
+  resetEmailMessage() {
+    // eslint-disable-next-line no-alert
+    alert('Email has been sent!  I will try to get back to you as soon as possible.');
+    this.setState({
+      name: '',
+      email: '',
+      message: '',
+    });
+  }
+
   render() {
     const { name, email, message } = this.state;
-    // {console.log(key)}
     return (
-      <div>
+      <div className={style.contactContainer} id="contactComponent">
         <div className={style.aboutTitleContainer}>
           <h1 className={style.aboutTitle}>
             <hr />
@@ -54,7 +65,7 @@ class ContactUs extends React.Component {
         </div>
         <form className="contact-form" value={name} onSubmit={this.sendEmail}>
           <label>Name</label>
-          <input name="name" value={name} onChange={this.handleChange} />
+          <input type="text" name="name" value={name} onChange={this.handleChange} />
           <label>Email</label>
           <input type="email" name="email" value={email} onChange={this.handleChange} />
           <label>Message</label>
