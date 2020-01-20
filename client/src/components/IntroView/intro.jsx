@@ -13,8 +13,7 @@ class IntroPage extends React.Component {
   // eslint-disable-next-line class-methods-use-this
   handleScroll() {
     const element = document.getElementById('contactComponent');
-    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
-    console.log('yup...');
+    element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
   }
 
   render() {
@@ -29,7 +28,7 @@ class IntroPage extends React.Component {
               Welcome to my portfolio! my name is Marvin Ho.
               I am a fullstack engineer.
             </p>
-            <button type="button" className={style.clickMeButton} onClick={this.handleScroll}> Click Me! </button>
+            <button type="button" className={style.clickMeButton} onClick={this.handleScroll}> Contact </button>
           </div>
         </div>
       </div>

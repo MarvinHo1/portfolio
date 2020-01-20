@@ -10,13 +10,10 @@ width: 100%;
 background-color: white;
 } 
 
-.test {
-  font-size: 700px;
-}
-
 .text {
   font-size: 16px;
 }
+
 /* Intro page component css */
 
 .introComponenet {
@@ -84,14 +81,99 @@ background-color: white;
 .clickMeButton:hover {
   background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
   background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
-
 }
 
-.navBar {
-  background: transparent;
+/* Navbar Css*/
+
+.navBarComponent {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  margin: 0;
+  padding: 0;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
 
+.logo {
+  font-size: 1.5em;
+  margin: .5em;
+}
+
+.navbarLinks ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbarLinks li {
+  list-style: none;
+}
+
+.navbarLinks li a {
+  color: white;
+  padding: 1em;
+  display: block;
+}
+
+.navbarLinks li:hover {
+  background-color: #555;
+}
+
+/* Hamburger Bar Css*/
+
+.toggleButton {
+  position: absolute;
+  top: .75em;
+  right: 1em;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggleButton .hamburgerBar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media(max-width: 1000px) {
+  .toggleButton {
+    display: flex;
+  }
+  .navbarLinks{
+    display:none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbarLinks ul{
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbarLinks li {
+    text-align: center;
+  }
+  .navbarLinks li a {
+    padding: .5em 1em;
+  }
+  .navbarLinks.active {
+    display: flex;
+  }
+}
 /*About Me Page*/
 
 .aboutMePage {
