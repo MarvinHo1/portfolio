@@ -55,23 +55,25 @@ class ContactUs extends React.Component {
   render() {
     const { name, email, message } = this.state;
     return (
-      <div className={style.contactContainer} id="contactComponent">
-        <div className={style.aboutTitleContainer}>
-          <h1 className={style.aboutTitle}>
-            <hr />
-              Contact
-            <hr />
-          </h1>
+      <div className={style.contactComponent} id="contactComponentID">
+        <div className={style.contactContainer}>
+          <div className={style.aboutTitleContainer}>
+            <h1 className={style.aboutTitle}>
+              <hr />
+                Contact
+              <hr />
+            </h1>
+          </div>
+          <form value={name} onSubmit={this.sendEmail}>
+            <label>Name</label>
+            <input type="text" name="name" value={name} onChange={this.handleChange} />
+            <label>Email</label>
+            <input type="email" name="email" value={email} onChange={this.handleChange} />
+            <label>Message</label>
+            <textarea name="message" value={message} onChange={this.handleChange} />
+            <input type="submit" value="Send" />
+          </form>
         </div>
-        <form value={name} onSubmit={this.sendEmail}>
-          <label>Name</label>
-          <input type="text" name="name" value={name} onChange={this.handleChange} />
-          <label>Email</label>
-          <input type="email" name="email" value={email} onChange={this.handleChange} />
-          <label>Message</label>
-          <textarea name="message" value={message} onChange={this.handleChange} />
-          <input type="submit" value="Send" />
-        </form>
       </div>
     );
   }

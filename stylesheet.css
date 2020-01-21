@@ -247,6 +247,13 @@ background-color: white;
 
 /* Card CSS for project component */
 
+.projectComponent {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 800px;
+}
+
 .projectCardComponenet {
   margin: 0;
   padding: 0;
@@ -360,3 +367,12 @@ background-color: white;
   border-style: inset;
   border-width: 1px;
 } 
+
+/* Contact Page CSS */
+
+.contactComponent {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 800px;
+}

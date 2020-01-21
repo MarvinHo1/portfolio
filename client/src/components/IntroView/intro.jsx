@@ -20,7 +20,7 @@ class IntroPage extends React.Component {
 
   render() {
     return (
-      <div className={style.introComponenet}>
+      <div className={style.introComponenet} id="introComponentID">
         <div className={style.introContainer}>
           <video className={style.videoBG} poster="https://imageportfolio.s3.amazonaws.com/night_hill.jpg" autoPlay muted loop>
             <source src="https://imageportfolio.s3.amazonaws.com/Night_BG.mp4" type="video/mp4" />

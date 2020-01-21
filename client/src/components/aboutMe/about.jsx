@@ -5,7 +5,7 @@ import style from '../../../../stylesheet.css'
 
 const AboutMeAnimations = (props) => {
   return (
-    <div className={style.aboutMePage}>
+    <div className={style.aboutMePage} id="aboutMeComponentID">
       <div className={style.aboutTitleContainer}>
         <h1 className={style.aboutTitle}>
           <hr />

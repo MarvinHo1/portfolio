@@ -3,7 +3,7 @@ import style from '../../../../stylesheet.css';
 
 const Card = (props) => {
   return (
-    <div>
+    <div className={style.projectComponent} id="projectComponentID">
       <div className={style.projectTitleContainer}>
         <h1 className={style.projectTitle}>
           <hr />
