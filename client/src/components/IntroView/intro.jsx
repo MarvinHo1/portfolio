@@ -4,16 +4,18 @@ import style from '../../../../stylesheet.css';
 class IntroPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      open: false,
-    };
+    this.state = {};
     this.handleScroll = this.handleScroll.bind(this);
   }
 
   // eslint-disable-next-line class-methods-use-this
   handleScroll() {
     const element = document.getElementById('contactComponent');
-    element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'end',
+      inline: 'nearest',
+    });
   }
 
   render() {

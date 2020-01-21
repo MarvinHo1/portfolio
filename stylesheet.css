@@ -111,7 +111,7 @@ background-color: white;
 .navbarLinks ul {
   margin: 0;
   padding: 0;
-  display: flex;
+  display: none;
 }
 
 .navbarLinks li {
@@ -125,6 +125,26 @@ background-color: white;
 }
 
 .navbarLinks li:hover {
+  background-color: #555;
+}
+
+.navbarLinks2 ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbarLinks2 li {
+  list-style: none;
+}
+
+.navbarLinks2 li a {
+  color: white;
+  padding: 1em;
+  display: block;
+}
+
+.navbarLinks2 li:hover {
   background-color: #555;
 }
 
@@ -152,9 +172,16 @@ background-color: white;
   .toggleButton {
     display: flex;
   }
-  .navbarLinks{
-    display:none;
+  .navbarLinks {
+    display: flex;
     width: 100%;
+  }
+  .navbarLinks ul{
+    display: flex;
+    width: 100%;
+  }
+  .navbarLinks2 {
+    display: none;
   }
   .navbar {
     flex-direction: column;

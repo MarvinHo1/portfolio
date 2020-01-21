@@ -63,7 +63,7 @@ class ContactUs extends React.Component {
             <hr />
           </h1>
         </div>
-        <form className="contact-form" value={name} onSubmit={this.sendEmail}>
+        <form value={name} onSubmit={this.sendEmail}>
           <label>Name</label>
           <input type="text" name="name" value={name} onChange={this.handleChange} />
           <label>Email</label>
