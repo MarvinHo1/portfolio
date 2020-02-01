@@ -27,6 +27,10 @@ class ContactUs extends React.Component {
       from_name: name,
       message_html: message,
     };
+
+    if (email.length < 5) {
+      return alert('Please enter vaild name and email.  Thank You')
+    }
     emailjs.send('marvin_gmail', 'template_YUkmXCTa', templateParams, key)
       .then((response) => {
         this.resetEmailMessage();
@@ -64,15 +68,31 @@ class ContactUs extends React.Component {
               <hr />
             </h1>
           </div>
-          <form value={name} onSubmit={this.sendEmail}>
-            <label>Name</label>
-            <input type="text" name="name" value={name} onChange={this.handleChange} />
-            <label>Email</label>
-            <input type="email" name="email" value={email} onChange={this.handleChange} />
-            <label>Message</label>
-            <textarea name="message" value={message} onChange={this.handleChange} />
-            <input type="submit" value="Send" />
-          </form>
+          <div className={style.contactFormContainer}>
+            <form className={style.formsComponent} value={name} onSubmit={this.sendEmail}>
+              <div className={style.nameAndEmailContainer}>
+                <input className={style.name} type="text" name="name" value={name} onChange={this.handleChange} placeholder="Name" />
+                <input className={style.email} type="email" name="email" value={email} onChange={this.handleChange} placeholder="Email" />
+              </div>
+              <div className={style.messageContainer}>
+                <label>Message</label>
+                <textarea className={style.message} name="message" value={message} onChange={this.handleChange} />
+              </div>
+              <div className={style.sendMessageButtonContainer}>
+                <input className={style.sendMessageButton} type="submit" value="Send Message" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div className={style.containerForIcons}>
+          <section className={style.icons}>
+            <div className={style.contactMessage}>Please feel free to send me a direct message by filling the form above or contact me through social sites listed below</div>
+            <div className={style.socialIcons}>
+              <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-linkedin-in" /></a>
+              <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-github" /></a>
+              <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-facebook-f" /></a>
+            </div>
+          </section>
         </div>
       </div>
     );

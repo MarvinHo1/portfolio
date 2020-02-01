@@ -10,7 +10,7 @@ class IntroPage extends React.Component {
 
   // eslint-disable-next-line class-methods-use-this
   handleScroll() {
-    const element = document.getElementById('contactComponent');
+    const element = document.getElementById('contactComponentID');
     element.scrollIntoView({
       behavior: 'smooth',
       block: 'end',

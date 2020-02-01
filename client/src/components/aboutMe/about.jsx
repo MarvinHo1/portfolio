@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
-import style from '../../../../stylesheet.css'
+import style from '../../../../stylesheet.css';
 
 const AboutMeAnimations = (props) => {
   return (
@@ -20,7 +20,7 @@ const AboutMeAnimations = (props) => {
           </Fade>
         </div>
         <div>
-          <Slide right>
+          <Fade right>
             <div className={style.aboutMeDescription}>
             <h1>description</h1>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -28,7 +28,7 @@ const AboutMeAnimations = (props) => {
               obcaecati voluptatem perferendis facilis quisquam suscipit! Fuga ipsa iusto temporibus 
               tempora nulla!</p>
             </div>
-          </Slide>
+          </Fade>
         </div>
       </div>
     </div>
