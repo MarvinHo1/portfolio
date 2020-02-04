@@ -17,7 +17,7 @@ const Card = (props) => {
             <div className={style.cardVisual1}>
               <div className={style.cardDescription}>
                 <h3 className={style.projectTitle}>Design</h3>
-                <img className={style.cardImage} src="https://www.w3schools.com/w3images/fjords.jpg" alt="Card for Testing" />
+                <img className={style.cardImage} src="http://imageportfolio.s3.amazonaws.com/night_hill.jpg" alt="Card for Testing" />
               </div>
             </div>
             <div className={style.cardVisual2}>

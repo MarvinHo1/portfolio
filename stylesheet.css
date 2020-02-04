@@ -1,6 +1,6 @@
 .mainPage{
   width: 100%;
-  height: 3200px;
+  height: auto;
 }
 
 
@@ -11,7 +11,9 @@ background-color: white;
 } 
 
 .text {
-  font-size: 16px;
+  font-size: 2rem;
+  color: limegreen;
+  padding-bottom: 25px;
 }
 
 /* Intro page component css */
@@ -64,7 +66,7 @@ background-color: white;
   padding: 0;
   min-height: 100vh;
   width: auto;
-  height: auto;
+  height: 800px;
 } 
 
 .clickMeButton {
@@ -213,36 +215,106 @@ background-color: white;
 .aboutTitleContainer {
   display: flex;
   justify-content: center;
-  padding: 50px 0 50px 0;
+  padding: 35px 0 0px 0;
   font-family: consolas;
 }
 
-.descriptionContainer {
-  max-width: 100%;
+.aboutGridContainer {
+  display: grid;
   height: auto;
+  width: 100%;
+  grid-template-columns: [first] auto [line2] 25rem [line3] auto [col4-start] 50px [five] 40px [end];
+  grid-template-rows: [row1-start] 360px [row1-end] 100px [third-line] 100px [last-line];
+}
+
+.aboutGridContainer .picContainer {
+  justify-self: stretch;
+  grid-column-start: 2;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+}
+
+.aboutPageIconContainer {
+  grid-column-start: line2;
+  grid-row-start: third-line;
+  grid-row-end: 3;
+}
+
+.aboutPageIcons {
+  border: 8px solid #395877;
+  width: 350px;
+  height: 180px;
+  background: #92BAD2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.aboutContactMessage {
+  padding-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #525d68;
+}
+
+.aboutPageIcons .iconbtns {
+  color: black;
+  border: 4px solid #C5E2F7;
+}
+
+.aboutPageIcons .iconbtns:hover {
+  color: #53789E;
 }
 
 .portfolioPicture {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 400px;
   object-fit: cover;
 }
 
+.descriptionContainer {
+  grid-column-start: line3;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+}
 .aboutMeDescription {
   word-wrap: break-word;
-  width: 300px;
-  height: 300px;
+  width: 605px;
+  height: 500px;
+  background-color: #f5f6f7;
+  color: #525d68;
+  font-family: Varela Round;
+}
+
+.aboutMeDescription h1 {
+  color: #06BC9B;
+  font-family: Varela Round;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutImageContainer {
+  grid-column-start: line3;
+  grid-column-end: five;
+  grid-row-start: row1-end;
+}
+
+.aboutImageContainer img{
+  position: relative;
+  z-index: 1;
+  width: 550px;
+  height: 280px;
+  object-fit: cover;
 }
 /*Title for Project*/
 
 .projectTitleContainer {
   display: flex;
   justify-content: center;
-  padding: 50px 0 0 0;
+  padding: 35px 0 0px 0;
   font-family: consolas;
+  height: auto;
 }
 
 /* Card CSS for project component */
@@ -256,20 +328,20 @@ background-color: white;
 
 .projectCardComponenet {
   margin: 0;
-  padding: 0;
-  min-height: 100vh;
   background-color: #fff;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* font-family: consolas; */
 }
 
 .cardContainer {
+  background-image: url("https://imageportfolio.s3.amazonaws.com/project-b.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   width: 1000px;
+  height: 675px;
 }
 
 .cardContainer .card{
@@ -278,7 +350,7 @@ background-color: white;
 
 .cardContainer .card .cardVisual1 {
   position: relative;
-  background: lightcoral;
+  background: #34495e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -468,7 +540,7 @@ section {
   width: 500px;
   color: #fff;
   font-size: 1rem;
-  line-height: 1.28571rem;
+  line-height: 1.29rem;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   padding-bottom: 1rem;
 }
