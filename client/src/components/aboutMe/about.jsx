@@ -33,11 +33,8 @@ const AboutMeAnimations = (props) => {
           <div className={style.descriptionContainer}>
             <Fade right>
               <div className={style.aboutMeDescription}>
-                <h1>Description</h1>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Reiciendis explicabo molestias, nihil corporis repudiandae, sunt architecto nesciunt rem, 
-                  obcaecati voluptatem perferendis facilis quisquam suscipit! Fuga ipsa iusto temporibus 
-                  tempora nulla!</p>
+                <h1>Who Am I?</h1>
+                <p> I am a fullstack engineer that enjoys building components that are simple and intuitive to users.  I strive to follow best practices when coding and will always be open to new ideas to improve my ability as a software engineer.  I take joy in tinkering with my components until they’re ready to be pushed to the website environment.  I take interest in learning about different optimizations such as scaling the backend of webpages to improve average latency, or how compressing images to boost page-speed load.  </p>
               </div>
             </Fade>
           </div>
