@@ -4,7 +4,7 @@ import style from '../../../../stylesheet.css';
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isToggleOn: true };
+    this.state = { isToggleOn: false };
     this.handleClick = this.handleClick.bind(this);
     this.renderView = this.renderView.bind(this);
     this.handleContactScroll = this.handleContactScroll.bind(this);

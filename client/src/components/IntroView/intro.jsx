@@ -23,16 +23,8 @@ class IntroPage extends React.Component {
 
   // eslint-disable-next-line class-methods-use-this
   typeWriter() {
-    const list = this.state.animationList;
-    let count = 0;
-    let index = 0;
-    let text = '';
-    let letter = '';
-    if (count === list.length) {
-      count = 0;
-    }
-    let test = "Hi, my name is Marvin.  Welcome to my portfolio!"
-    return test
+    const test = 'Hi, my name is Marvin.  Welcome to my portfolio!'
+    return test;
   }
 
   render() {
