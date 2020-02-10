@@ -1,6 +1,5 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
 import style from '../../../../stylesheet.css';
 
 const AboutMeAnimations = (props) => {
@@ -22,7 +21,9 @@ const AboutMeAnimations = (props) => {
           </div>
           <div className={style.aboutPageIconContainer}>
             <section className={style.aboutPageIcons}>
-              <div className={style.aboutContactMessage}>If you have any cool projects to work on please contact me either through email or the social links below!</div>
+              <div className={style.aboutContactMessage}>
+                If you have any cool projects to work on please contact me either through email or the social links below!
+              </div>
               <div className={style.socialIcons}>
                 <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-linkedin-in" /></a>
                 <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-github" /></a>

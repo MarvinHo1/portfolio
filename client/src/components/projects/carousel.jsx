@@ -56,27 +56,34 @@ class Carousel extends React.Component {
   render() {
     const { images, translateValue } = this.state;
     return (
-      <div className={style.carouselContainer}>
-        <div
-          className={style.imageCarousel}
-          style={{
-            transform: `translateX(${translateValue}px)`,
-            transition: 'transform .5s',
-          }}
-        >
-          {
-            images.map((image, i) => (
-              <img key={i} src={image} alt="carousel" ref={this.imageWidth} />
-            ))
-          }
+      <div>
+        <div className={style.carouselContainer}>
+          <div
+            className={style.imageCarousel}
+            style={{
+              transform: `translateX(${translateValue}px)`,
+              transition: 'transform .5s',
+            }}
+          >
+            {
+              images.map((image, i) => (
+                <img key={i} src={image} alt="carousel" ref={this.imageWidth} type="video/mp4" />
+              ))
+            }
+          </div>
+          <div className={style.arrows}>
+            <button className={style.backArrow} onClick={this.prevSlide} type="button">
+              <i className="fa fa-arrow-left fa-2x" aria-hidden="true" />
+            </button>
+            <button className={style.forwardArrow} onClick={this.nextSlide} type="button">
+              <i className="fa fa-arrow-right fa-2x" aria-hidden="true" />
+            </button>
+          </div>
         </div>
-        <div className={style.arrows}>
-          <button className={style.backArrow} onClick={this.prevSlide} type="button">
-            <i className="fa fa-arrow-left fa-2x" aria-hidden="true" />
-          </button>
-          <button className={style.forwardArrow} onClick={this.nextSlide} type="button">
-            <i className="fa fa-arrow-right fa-2x" aria-hidden="true" />
-          </button>
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ipsum iste rerum praesentium recusandae earum, reiciendis facilis porro, 
+            odio illum quisquam labore doloribus quae nobis odit, nulla alias culpa tempore excepturi.</p>
         </div>
       </div>
     );
