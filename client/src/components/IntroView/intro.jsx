@@ -5,7 +5,7 @@ class IntroPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      list: ['Hello', 'Software Engineer', 'Frontend Engineer', 'Fullstack Engineer', 'Designer'],
+      list: ['Building!', 'intro page', 'project page', 'mobile repsonsive'],
       delLetter: false,
       text: '',
       index: 0,
@@ -32,9 +32,8 @@ class IntroPage extends React.Component {
   // eslint-disable-next-line class-methods-use-this
   typeWriter() {
     const {
-      list, delLetter, text, wordCount,
+      list, delLetter, text, wordCount, index,
     } = this.state;
-    let { index } = this.state;
     const word = list[index];
     if (word.length !== text.length && delLetter === false) {
       this.setState({
@@ -59,10 +58,11 @@ class IntroPage extends React.Component {
         wordCount: 0,
       });
     }
-    setTimeout(() => this.typeWriter(), 100);
+    setTimeout(() => this.typeWriter(), 80);
   }
 
   render() {
+    const { text } = this.state;
     return (
       <div className={style.introComponenet} id="introComponentID">
         <div className={style.introContainer}>
@@ -70,9 +70,9 @@ class IntroPage extends React.Component {
             <source className={style.videoBG} src="https://imageportfolio.s3.amazonaws.com/Night_BG.mp4" type="video/mp4" />
           </video>
           <div className={style.introButtonContainer}>
-            <p className={style.text}>
-              This is a Test {this.state.text}
-            </p>
+            <p className={style.text}>Site Still Under 
+            <br />
+            Construction working on {text}</p>
             <button type="button" className={style.clickMeButton} onClick={this.handleScroll}> Contact </button>
           </div>
         </div>

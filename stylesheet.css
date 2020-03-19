@@ -551,6 +551,12 @@ padding-right: 0px;
   outline: none;
 }
 
+.projectButtons {
+  position: relative;
+  
+
+}
+
 /* Contact Page CSS */
 
 .contactComponent {

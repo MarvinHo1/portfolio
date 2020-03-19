@@ -88,9 +88,9 @@ class ContactUs extends React.Component {
           <section className={style.icons}>
             <div className={style.contactMessage}>Please feel free to send me a direct message by filling the form above or contact me through social sites listed below</div>
             <div className={style.socialIcons}>
-              <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-linkedin-in" /></a>
-              <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-github" /></a>
-              <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-facebook-f" /></a>
+              <a className={style.iconbtns} href="https://www.linkedin.com/in/marvinho1"><i className="iconbtn fab fa-linkedin-in" /></a>
+              <a className={style.iconbtns} href="https://github.com/MarvinHo1"><i className="iconbtn fab fa-github" /></a>
+              {/* <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-facebook-f" /></a> */}
             </div>
           </section>
         </div>

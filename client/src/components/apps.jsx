@@ -31,7 +31,6 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div className={style.mainPage}>
-        <div className={style.test2}>test2</div>
         <IntroPage />
         <NavBar />
         <AboutMeAnimations />

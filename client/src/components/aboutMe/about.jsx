@@ -25,9 +25,9 @@ const AboutMeAnimations = (props) => {
                 If you have any cool projects to work on please contact me either through email or the social links below!
               </div>
               <div className={style.socialIcons}>
-                <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-linkedin-in" /></a>
-                <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-github" /></a>
-                <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-facebook-f" /></a>
+                <a className={style.iconbtns} href="https://www.linkedin.com/in/marvinho1/"><i className="iconbtn fab fa-linkedin-in" /></a>
+                <a className={style.iconbtns} href="https://github.com/MarvinHo1"><i className="iconbtn fab fa-github" /></a>
+                {/* <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-facebook-f" /></a> */}
               </div>
             </section>
           </div>

@@ -1,17 +1,12 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import style from '../../../../stylesheet.css';
+
 
 class Carousel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      images: [
-        "http://imageportfolio.s3.amazonaws.com/night_hill.jpg",
-        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/aurora.jpg",
-        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/canyon.jpg",
-        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg",
-        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/desert.jpg",
-      ],
       currentIndex: 0,
       translateValue: 0,
     };
@@ -39,8 +34,9 @@ class Carousel extends React.Component {
   }
 
   nextSlide() {
+    const { images } = this.props.projInfo;
     const { width } = this.imageWidth.current;
-    const { currentIndex, images } = this.state;
+    const { currentIndex } = this.state;
     if (currentIndex === images.length - 1) {
       return this.setState({
         currentIndex: 0,
@@ -54,7 +50,8 @@ class Carousel extends React.Component {
   }
 
   render() {
-    const { images, translateValue } = this.state;
+    const { images, info } = this.props.projInfo;
+    const { translateValue } = this.state;
     return (
       <div>
         <div className={style.carouselContainer}>
@@ -67,7 +64,7 @@ class Carousel extends React.Component {
           >
             {
               images.map((image, i) => (
-                <img key={i} src={image} alt="carousel" ref={this.imageWidth} type="video/mp4" />
+                <img key={i} src={image} alt="carousel" ref={this.imageWidth} />
               ))
             }
           </div>
@@ -81,9 +78,17 @@ class Carousel extends React.Component {
           </div>
         </div>
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ipsum iste rerum praesentium recusandae earum, reiciendis facilis porro, 
-            odio illum quisquam labore doloribus quae nobis odit, nulla alias culpa tempore excepturi.</p>
+          {
+            info.map((bulletPoints,idx) => {
+              // console.log(bulletPoints)
+              return (
+                <div key={idx}>
+                  {bulletPoints}
+                  <br />
+                </div>
+              );
+            })
+          }
         </div>
       </div>
     );
