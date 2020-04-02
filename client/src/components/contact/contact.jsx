@@ -29,15 +29,19 @@ class ContactUs extends React.Component {
     };
 
     if (email.length < 5) {
-      return alert('Please enter vaild name and email.  Thank You')
+      // eslint-disable-next-line no-alert
+      return alert('Please enter vaild name and email.  Thank You');
     }
     emailjs.send('marvin_gmail', 'template_YUkmXCTa', templateParams, key)
       .then((response) => {
         this.resetEmailMessage();
+        // eslint-disable-next-line no-console
         console.log('SUCCESS!', response.status, response.text);
       }, (err) => {
+        // eslint-disable-next-line no-console
         console.log('FAILED...', err);
       });
+    return 'Email sent';
   }
 
   handleChange(event) {
@@ -88,9 +92,8 @@ class ContactUs extends React.Component {
           <section className={style.icons}>
             <div className={style.contactMessage}>Please feel free to send me a direct message by filling the form above or contact me through social sites listed below</div>
             <div className={style.socialIcons}>
-              <a className={style.iconbtns} href="https://www.linkedin.com/in/marvinho1"><i className="iconbtn fab fa-linkedin-in" /></a>
-              <a className={style.iconbtns} href="https://github.com/MarvinHo1"><i className="iconbtn fab fa-github" /></a>
-              {/* <a className={style.iconbtns} href="#"><i className="iconbtn fab fa-facebook-f" /></a> */}
+              <a className={style.iconbtns} aria-label="Linkedin" href="https://www.linkedin.com/in/marvinho1"><i className="iconbtn fab fa-linkedin-in" /></a>
+              <a className={style.iconbtns} aria-label="Github" href="https://github.com/MarvinHo1"><i className="iconbtn fab fa-github" /></a>
             </div>
           </section>
         </div>

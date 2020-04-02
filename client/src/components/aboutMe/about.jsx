@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import style from '../../../../stylesheet.css';
 
-const AboutMeAnimations = (props) => {
+const AboutMeAnimations = () => {
   return (
     <div className={style.aboutMePage} id="aboutMeComponentID">
       <div className={style.aboutTitleContainer}>

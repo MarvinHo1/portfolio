@@ -5,7 +5,7 @@ class IntroPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      list: ['Building!', 'intro page', 'project page', 'mobile repsonsive'],
+      list: [' ', 'a fullstack software engineer ', 'adepted with various frameworks', 'skilled with different databases', ' a quick learner and team player!'],
       delLetter: false,
       text: '',
       index: 0,
@@ -70,9 +70,20 @@ class IntroPage extends React.Component {
             <source className={style.videoBG} src="https://imageportfolio.s3.amazonaws.com/Night_BG.mp4" type="video/mp4" />
           </video>
           <div className={style.introButtonContainer}>
-            <p className={style.text}>Site Still Under 
-            <br />
-            Construction working on {text}</p>
+            <p className={style.text}>
+                Hello, I'm Marvin!
+            </p>
+            <p className={style.text}>
+              Welcome to my Portfolo.
+            </p>
+            <div className={style.textContainer}>
+              <div className={style.typeWriterContainer}>
+                <div className={style.tabletTestContainer}>
+                  I am {text}
+                </div>
+                <hr />
+              </div>
+            </div>
             <button type="button" className={style.clickMeButton} onClick={this.handleScroll}> Contact </button>
           </div>
         </div>

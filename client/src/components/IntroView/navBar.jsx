@@ -79,7 +79,7 @@ class NavBar extends React.Component {
       <div className={style.navBarComponent}>
         <nav className={style.navbar}>
           <div className={style.logo} onClick={this.handleHomeScroll}> MH </div>
-          <div href="#" className={style.toggleButton} onClick={this.handleClick} >
+          <div href="#" className={style.toggleButton} onClick={this.handleClick}>
             <span className={style.hamburgerBar} />
             <span className={style.hamburgerBar} />
             <span className={style.hamburgerBar} />

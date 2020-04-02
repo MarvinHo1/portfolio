@@ -16,8 +16,9 @@ class Carousel extends React.Component {
   }
 
   prevSlide() {
+    const { images } = this.props.projInfo;
     const { width } = this.imageWidth.current;
-    const { images, translateValue } = this.state;
+    const { translateValue } = this.state;
     const carouselWidth = (images.length - 1) * -width;
     if (translateValue === 0) {
       this.setState({
@@ -79,7 +80,7 @@ class Carousel extends React.Component {
         </div>
         <div>
           {
-            info.map((bulletPoints,idx) => {
+            info.map((bulletPoints, idx) => {
               // console.log(bulletPoints)
               return (
                 <div key={idx}>

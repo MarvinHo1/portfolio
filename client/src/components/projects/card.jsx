@@ -1,6 +1,6 @@
 import React from 'react';
 import style from '../../../../stylesheet.css';
-import Carousel from './carousel.jsx'
+import Carousel from './carousel.jsx';
 
 class Card extends React.Component {
   constructor(props) {
@@ -110,7 +110,7 @@ class Card extends React.Component {
   renderCarousel(string) {
     const { isOpen, projects } = this.state;
     let elementInx = null;
-    projects.map((carouselInfo,idx) => {
+    projects.map((carouselInfo, idx) => {
       if (carouselInfo.name === string) {
         elementInx = idx;
       }
@@ -135,7 +135,7 @@ class Card extends React.Component {
     return (
       <div className={style.projectComponent} id="projectComponentID">
         <div className={style.projectTitleContainer}>
-          <h1 className={style.projectTitle}>
+          <h1 className={style.projectTitles}>
             <hr />
             Project
             <hr />
