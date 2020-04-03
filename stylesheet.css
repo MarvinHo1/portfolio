@@ -117,31 +117,6 @@ padding-right: 0px;
   outline: none;
 }
 
-/* Tablet and Ipads */
-@media screen and (min-width: 768px) and (max-width: 1024px){
-  .text {
-    font-size: 3rem;
-  }
-
-  .typeWriterContainer {
-    font-size: 3rem;
-    width: 47rem;
-  }
-
-  .tabletTestContainer {
-    width: 47rem;
-  }
-
-  .clickMeButton {
-    height: 5rem;
-    width: 10rem;
-  }
-
-  .introButtonContainer button {
-    font-size: 2rem;
-  }
-}
-
 /* Navbar Css*/
 
 .navBarComponent {
@@ -293,7 +268,7 @@ padding-right: 0px;
 .aboutTitleContainer {
   display: flex;
   justify-content: center;
-  padding: 35px 0 0px 0;
+  padding: 2rem 0 0rem 0;
   font-family: consolas;
 }
 
@@ -387,51 +362,6 @@ padding-right: 0px;
   object-fit: cover;
 }
 
-/* Tablet and Ipads */
-@media screen and (min-width: 768px) and (max-width: 1024px){
-  .aboutMePage {
-    height: 1350px;
-  }
-
-  .aboutContactMessage {
-    display: none;
-  }
-  .aboutImageContainer {
-    display: none;
-  }
-  .aboutPageIcons {
-    display: none;
-  }
-  .aboutGridContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center
-  }
-  .portfolioPicture {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin: 3rem 0rem 3rem 0rem;
-  }
-  .aboutTitleContainer h1 {
-    font-size: 4rem;
-  }
-
-  .aboutMeDescription h1 {
-    font-size: 3rem;
-  }
-
-  .aboutMeDescription p {
-    font-size: 2rem;
-    line-height: normal;
-  }
-
-  .aboutMeDescription {
-    height: 50rem;
-    width: 60rem;
-  }
-
-}
 /*Title for Project*/
 
 .projectTitleContainer {
@@ -567,61 +497,6 @@ padding-right: 0px;
   border-style: inset;
   border-width: 1px;
 }
-
-/* Tablet and Ipads */
-@media screen and (min-width: 768px) and (max-width: 1024px){
-
-  .projectComponent {
-    min-height: 100vh;
-    height: 1400px;
-  } 
-  
-  .projectTitles {
-    font-size: 4rem;
-  }
-
-  .cardContainer {
-    background-image: none;
-  }
-
-  .cardContainer .card .cardVisual1 {
-    transform: none;
-    height: 21rem;
-    width: 27rem;
-    box-sizing: boarder-box;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
-    align-items: flex-start
-  }
-
-  .cardContainer .card .cardVisual2 {
-    transform: none;
-    height: 21rem;
-    width: 27rem;
-    z-index: 2;
-  }
-
-  .cardContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cardContainer .card {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 5rem;
-  }
-
-  .cardContainer .card .cardVisual1 img {
-    width: 100%;
-    height: 295px;
-    object-fit: fill;
-    opacity: 1;
-  }
-
-  
-}
-
 
 /* project Component modal CSS */
 
@@ -876,3 +751,508 @@ section {
 .icons .iconbtns:hover {
   color: #fff;
 }
+
+/* Ipad Pro Landsacpe */
+@media only screen 
+and (max-width: 1366px) 
+and (min-width: 1024px) 
+and (orientation: landscape)  {
+  .text {
+    font-size: 3rem;
+  }
+
+  .typeWriterContainer {
+    font-size: 3rem;
+    width: 47rem;
+  }
+
+  .tabletTestContainer {
+    width: 47rem;
+  }
+
+  .clickMeButton {
+    height: 4rem;
+    width: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .introButtonContainer button {
+    font-size: 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .navbarLinks2 ul li {
+    font-size: 1.5em;
+  }
+
+  .navbarLinks {
+    font-size: 1.5em;
+  }
+
+  .aboutMePage {
+    height: 800px;
+  }
+
+  .aboutContactMessage {
+    display: none;
+  }
+  .aboutImageContainer {
+    display: none;
+  }
+  .aboutPageIcons {
+    display: none;
+  }
+  .aboutGridContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  .portfolioPicture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 1.3rem 0rem 1.5rem 0rem;
+  }
+
+  .aboutMeDescription h1 {
+    font-size: 3rem;
+  }
+
+  .aboutMeDescription p {
+    font-size: 1.7rem;
+    line-height: normal;
+  }
+
+  .aboutMeDescription {
+    height: 33rem;
+    width: 62rem;
+  }
+
+  .projectComponent {
+    height: 100vh;
+  }
+
+  .projectTitles {
+    font-size: 4rem;
+  }
+
+  .contactComponent {
+    height: 1000px;
+  }
+
+  .aboutTitleContainer h1 {
+    padding: 0px;
+    font-size: 3rem;
+  }
+
+  .contactMessage {
+    font-size: 1.5rem;
+  }
+
+  .formsComponent {
+    height: 60%;
+    width: 60%;
+  }
+
+  .nameAndEmailContainer .name {
+    width: 50%;
+    height: 3rem;
+    font-size: 2rem;
+  }
+
+  .nameAndEmailContainer .email {
+    width: 50%;
+    height: 3rem;
+    font-size: 2rem;
+  }
+
+  .messageContainer label {
+    font-size: 2rem;
+  }
+
+  .messageContainer textarea {
+    max-width: 100%;
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .sendMessageButton {
+    margin-top: 1rem;
+    height: 4rem;
+    width: 12rem;
+    font-size: 1.6rem; 
+  }
+
+  .icons {
+    max-height: 15rem;
+  }
+
+  .iconbtns {
+    height: 60px;
+    width: 60px;
+    font-size: 2.5rem;
+  }
+}
+
+/* Ipad Pro Portrait */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait)  {
+    .text {
+      font-size: 2rem;
+    }
+  
+    .typeWriterContainer {
+      font-size: 2rem;
+      width: 30rem;
+    }
+  
+    .tabletTestContainer {
+      width: 47rem;
+    }
+  
+    .clickMeButton {
+      height: 3.5rem;
+      width: 10rem;
+    }
+  
+    .introButtonContainer button {
+      font-size: 2rem;
+    }
+
+    .aboutMePage {
+      height: 1300px
+    }
+
+    .aboutContactMessage {
+      display: none;
+    }
+
+    .aboutImageContainer {
+      display: none;
+    }
+
+    .aboutPageIcons {
+      display: none;
+    }
+
+    .aboutGridContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
+
+    .portfolioPicture {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      margin: 0rem 0rem 1.5rem 0rem;
+    }
+
+    .aboutTitleContainer h1 {
+      padding: 0px;
+      font-size: 3rem;
+    }
+  
+    .aboutMeDescription h1 {
+      font-size: 3rem;
+    }
+  
+    .aboutMeDescription p {
+      font-size: 1.5rem;
+      line-height: normal;
+    }
+  
+    .aboutMeDescription {
+      height: 50rem;
+      width: 55rem;
+    }
+
+    .projectComponent {
+      height: 1350px;
+    } 
+    
+    .projectTitles {
+      font-size: 4rem;
+    }
+  
+    .cardContainer {
+      background-image: none;
+    }
+  
+    .cardContainer .card .cardVisual1 {
+      transform: none;
+      height: 21rem;
+      width: 27rem;
+      box-sizing: boarder-box;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+      align-items: flex-start
+    }
+  
+    .cardContainer .card .cardVisual2 {
+      transform: none;
+      height: 21rem;
+      width: 27rem;
+      z-index: 2;
+    }
+  
+    .cardContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cardContainer .card {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 5rem;
+    }
+  
+    .cardContainer .card .cardVisual1 img {
+      width: 100%;
+      height: 295px;
+      object-fit: fill;
+      opacity: 1;
+    }
+    .contactComponent {
+      height: 1000px;
+    }
+  
+    .aboutTitleContainer h1 {
+      padding: 0px;
+      font-size: 3rem;
+    }
+  
+    .contactMessage {
+      font-size: 1.5rem;
+    }
+  
+    .formsComponent {
+      height: 60%;
+      width: 60%;
+    }
+  
+    .nameAndEmailContainer .name {
+      width: 50%;
+      height: 3rem;
+      font-size: 2rem;
+    }
+  
+    .nameAndEmailContainer .email {
+      width: 50%;
+      height: 3rem;
+      font-size: 2rem;
+    }
+  
+    .messageContainer label {
+      font-size: 2rem;
+    }
+  
+    .messageContainer textarea {
+      max-width: 100%;
+      width: 100%;
+      font-size: 2rem;
+    }
+  
+    .sendMessageButton {
+      margin-top: 1rem;
+      height: 4rem;
+      width: 12rem;
+      font-size: 1.6rem; 
+    }
+  
+    .icons {
+      max-height: 15rem;
+    }
+  
+    .iconbtns {
+      height: 60px;
+      width: 60px;
+      font-size: 2.5rem;
+    }
+}
+
+
+/* Tablet and Ipads
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .text {
+    font-size: 2rem;
+  }
+
+  .typeWriterContainer {
+    font-size: 2rem;
+    width: 30rem;
+  }
+
+  .tabletTestContainer {
+    width: 47rem;
+  }
+
+  .clickMeButton {
+    height: 3.5rem;
+    width: 10rem;
+  }
+
+  .introButtonContainer button {
+    font-size: 2rem;
+  }
+} */
+
+/* Tablet and Ipads
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .aboutMePage {
+    height: 1300px
+  }
+
+  .aboutContactMessage {
+    display: none;
+  }
+  .aboutImageContainer {
+    display: none;
+  }
+  .aboutPageIcons {
+    display: none;
+  }
+  .aboutGridContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  .portfolioPicture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0rem 0rem 1.5rem 0rem;
+  }
+  .aboutTitleContainer h1 {
+    padding: 0px;
+    font-size: 3rem;
+  }
+
+  .aboutMeDescription h1 {
+    font-size: 3rem;
+  }
+
+  .aboutMeDescription p {
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+
+  .aboutMeDescription {
+    height: 50rem;
+    width: 55rem;
+  }
+} */
+
+/* Tablet and Ipads
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+  .projectComponent {
+    height: 1350px;
+  } 
+  
+  .projectTitles {
+    font-size: 4rem;
+  }
+
+  .cardContainer {
+    background-image: none;
+  }
+
+  .cardContainer .card .cardVisual1 {
+    transform: none;
+    height: 21rem;
+    width: 27rem;
+    box-sizing: boarder-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    align-items: flex-start
+  }
+
+  .cardContainer .card .cardVisual2 {
+    transform: none;
+    height: 21rem;
+    width: 27rem;
+    z-index: 2;
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardContainer .card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+  }
+
+  .cardContainer .card .cardVisual1 img {
+    width: 100%;
+    height: 295px;
+    object-fit: fill;
+    opacity: 1;
+  }
+} */
+
+/* Portrait for ipad/tablet
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .contactComponent {
+    height: 1000px;
+  }
+
+  .aboutTitleContainer h1 {
+    padding: 0px;
+    font-size: 3rem;
+  }
+
+  .contactMessage {
+    font-size: 1.5rem;
+  }
+
+  .formsComponent {
+    height: 60%;
+    width: 60%;
+  }
+
+  .nameAndEmailContainer .name {
+    width: 50%;
+    height: 3rem;
+    font-size: 2rem;
+  }
+
+  .nameAndEmailContainer .email {
+    width: 50%;
+    height: 3rem;
+    font-size: 2rem;
+  }
+
+  .messageContainer label {
+    font-size: 2rem;
+  }
+
+  .messageContainer textarea {
+    max-width: 100%;
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .sendMessageButton {
+    margin-top: 1rem;
+    height: 4rem;
+    width: 12rem;
+    font-size: 1.6rem; 
+  }
+
+  .icons {
+    max-height: 15rem;
+  }
+
+  .iconbtns {
+    height: 60px;
+    width: 60px;
+    font-size: 2.5rem;
+  }
+} */
