@@ -34,7 +34,11 @@ const AboutMeAnimations = () => {
             <Fade right>
               <div className={style.aboutMeDescription}>
                 <h1>Who Am I?</h1>
-                <p> I am a fullstack engineer that enjoys building components that are simple and intuitive to users.  I strive to follow best practices when coding and will always be open to new ideas to improve my ability as a software engineer.  I take joy in tinkering with my components until they’re ready to be pushed to the website environment.  I take interest in learning about different optimizations such as scaling the backend of webpages to improve average latency, or how compressing images to boost page-speed load.  </p>
+                <p>I am a fullstack engineer that enjoys building components that are simple and intuitive to users. I strive to follow best practices when coding and open to new ideas to develop my abilities as a software engineer. I take joy in tinkering with my components to improve user experience. I am interested in learning about different optimizations such as, scaling websites to lower latency, boosting page-load speeds or optimizing the design of my application.</p>
+                <br />
+                <p>Currently, my goals as a software engineer is to work on developing my skills.  I try to read as many articles about following best practices, frameworks, and libraries.  I spend most of my time working on my projects so I can build different components.</p>
+                <br />
+                <p>I enjoy being a software developer because of the potential of innovation and growth when working in the tech space.  I like building, creating, and improving different applications and components.  I am motivated as a software engineer because there is always something to learn and always an area to improve.  The life of a software engineer never gets boring and it brings me joy!</p>
               </div>
             </Fade>
           </div>

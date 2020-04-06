@@ -277,7 +277,7 @@ padding-right: 0px;
   height: auto;
   width: 100%;
   grid-template-columns: [first] auto [line2] 25rem [line3] auto [col4-start] 50px [five] 40px [end];
-  grid-template-rows: [row1-start] 360px [row1-end] 100px [third-line] 100px [last-line];
+  grid-template-rows: [row1-start] 420px [row1-end] 70px [third-line] 100px [last-line];
 }
 
 .aboutGridContainer .picContainer {
@@ -341,6 +341,11 @@ padding-right: 0px;
   font-family: Varela Round;
 }
 
+.aboutMeDescription p {
+  margin: 0px;
+  padding: 0px;
+}
+
 .aboutMeDescription h1 {
   color: #06BC9B;
   font-family: Varela Round;
@@ -357,8 +362,8 @@ padding-right: 0px;
 .aboutImageContainer img{
   position: relative;
   z-index: 1;
-  width: 550px;
-  height: 280px;
+  width: 500px;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -803,17 +808,21 @@ and (orientation: landscape)  {
   .aboutContactMessage {
     display: none;
   }
+
   .aboutImageContainer {
     display: none;
   }
+
   .aboutPageIcons {
     display: none;
   }
+
   .aboutGridContainer {
     display: flex;
     flex-direction: column;
     align-items: center
   }
+
   .portfolioPicture {
     width: 300px;
     height: 300px;
@@ -822,7 +831,7 @@ and (orientation: landscape)  {
   }
 
   .aboutMeDescription h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .aboutMeDescription p {
@@ -831,15 +840,16 @@ and (orientation: landscape)  {
   }
 
   .aboutMeDescription {
-    height: 33rem;
+    height: 37rem;
     width: 62rem;
   }
-
+  
   .projectComponent {
     height: 95vh;
   }
 
   .projectTitles {
+    margin-top: 2rem;
     font-size: 4rem;
   }
 
@@ -1137,7 +1147,7 @@ and (orientation: landscape)  {
   }
 
   .aboutMeDescription p {
-    font-size: 1.7rem;
+    font-size: 2rem;
     line-height: normal;
   }
 
@@ -1322,12 +1332,12 @@ and (orientation: landscape)  {
   }
 
   .aboutMeDescription p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: normal;
   }
 
   .aboutMeDescription {
-    height: 25rem;
+    height: 26rem;
     width: 55rem;
   }
 
@@ -1446,7 +1456,7 @@ and (orientation: landscape)  {
   }
 }
 
-/**********************************************Smartphone Landscape************************************************************************/
+/**********************************************Smartphone Portrait************************************************************************/
 
 @media only screen 
    and (max-device-width: 480px) 
@@ -1535,7 +1545,7 @@ and (orientation: landscape)  {
   }
 
   .aboutMeDescription p {
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: normal;
   }
 
@@ -1753,7 +1763,7 @@ and (orientation: landscape)  {
   }
 
   .aboutMeDescription p {
-    font-size: 1.5rem;
+    font-size: 2.05rem;
     line-height: normal;
   }
 
