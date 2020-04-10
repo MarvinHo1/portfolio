@@ -71,6 +71,7 @@ class Card extends React.Component {
       ],
     };
     this.toggleModal = this.toggleModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
     this.refElement = this.refElement.bind(this);
     this.projectTitle = React.createRef();
     this.clickOutsideModal = this.clickOutsideModal.bind(this);
@@ -98,6 +99,15 @@ class Card extends React.Component {
     });
   }
 
+  // (X button) to close the modal;
+  closeModal() {
+    const { isOpen } = this.state;
+    document.body.style.overflow = 'auto';
+    this.setState({
+      isOpen: !isOpen,
+    });
+  }
+
   clickOutsideModal(event) {
     if (this.ref && !this.ref.contains(event.target)) {
       if (document.body.style.overflow === 'hidden') {
@@ -122,6 +132,7 @@ class Card extends React.Component {
           <div ref={this.refElement} className={style.modal}>
             <Carousel
               projInfo={projects[elementInx]}
+              closeCarousel={this.closeModal}
             />
           </div>
         </div>

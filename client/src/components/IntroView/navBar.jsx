@@ -27,6 +27,9 @@ class NavBar extends React.Component {
       block: 'end',
       inline: 'nearest',
     });
+    this.setState({
+      isToggleOn: false,
+    });
   }
 
   // eslint-disable-next-line class-methods-use-this
@@ -36,6 +39,9 @@ class NavBar extends React.Component {
       behavior: 'smooth',
       block: 'end',
       inline: 'nearest',
+    });
+    this.setState({
+      isToggleOn: false,
     });
   }
 
@@ -47,6 +53,9 @@ class NavBar extends React.Component {
       block: 'end',
       inline: 'nearest',
     });
+    this.setState({
+      isToggleOn: false,
+    });
   }
 
   // eslint-disable-next-line class-methods-use-this
@@ -56,6 +65,9 @@ class NavBar extends React.Component {
       behavior: 'smooth',
       block: 'end',
       inline: 'nearest',
+    });
+    this.setState({
+      isToggleOn: false,
     });
   }
 

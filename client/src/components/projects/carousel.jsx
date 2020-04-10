@@ -51,11 +51,14 @@ class Carousel extends React.Component {
   }
 
   render() {
+    console.log(this.props);
+    const { closeCarousel } = this.props;
     const { images, info } = this.props.projInfo;
     const { translateValue } = this.state;
     return (
       <div>
         <div className={style.carouselContainer}>
+            <a className={style.modalCloseButton} onClick={() => closeCarousel()} type="button">X Close</a>
           <div
             className={style.imageCarousel}
             style={{
@@ -83,7 +86,7 @@ class Carousel extends React.Component {
             info.map((bulletPoints, idx) => {
               // console.log(bulletPoints)
               return (
-                <div key={idx}>
+                <div className={style.modalText} key={idx}>
                   {bulletPoints}
                   <br />
                 </div>

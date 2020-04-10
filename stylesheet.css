@@ -525,7 +525,7 @@ padding-right: 0px;
 }
 
 .modal {
-  height: 700px;
+  height: 43rem;
   max-width: 100%;
   min-width: 800px;
   border-color: #e6e6e6;
@@ -608,10 +608,28 @@ padding-right: 0px;
   outline: none;
 }
 
+.modalCloseButton {
+  position: relative;
+  z-index: 5;
+  float: right;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  outline: none;
+  right: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.modalCloseButton:hover {
+  color: blue;
+}
+
 .projectButtons {
   position: relative;
-  
-
 }
 
 /* Contact Page CSS */
@@ -853,6 +871,46 @@ and (orientation: landscape)  {
     font-size: 4rem;
   }
 
+  /*start*/
+
+  .modal {
+    height: 100%;
+    width:100%;
+    border-radius: 0%;
+  }
+
+  .modalCloseButton {
+    font-size: 2rem;
+  }
+
+  .carouselContainer {
+    height: 100%;
+    width: 100%;
+  }
+
+  .imageCarousel {
+    height: 35rem;
+    width: 100%;
+  }
+
+  .imageCarousel img {
+    height: 35rem;
+    width: 100%;
+    border-radius: .01%;
+  }
+
+  .carouselContainer button {
+    height: 5rem;
+    width: 5rem;
+    font-size: 1.5rem;
+  }
+
+  .modalText {
+    font-size: 2rem;
+  }
+
+  /*end*/
+
   .contactComponent {
     height: 1000px;
     margin-top: 3rem;
@@ -1029,6 +1087,46 @@ and (orientation: landscape)  {
       object-fit: fill;
       opacity: 1;
     }
+        /*start*/
+
+    .modal {
+      height: 100%;
+      width:100%;
+      border-radius: 0%;
+    }
+
+    .modalCloseButton {
+      font-size: 2rem;
+    }
+
+    .carouselContainer {
+      height: 100%;
+      width: 100%;
+    }
+
+    .imageCarousel {
+      height: 35rem;
+      width: 100%;
+    }
+
+    .imageCarousel img {
+      height: 35rem;
+      width: 100%;
+      border-radius: .01%;
+    }
+
+    .carouselContainer button {
+      height: 5rem;
+      width: 5rem;
+      font-size: 1.5rem;
+    }
+
+    .modalText {
+      font-size: 2rem;
+    }
+
+    /*end*/
+
     .contactComponent {
       height: 1000px;
     }
