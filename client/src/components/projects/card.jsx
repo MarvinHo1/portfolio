@@ -15,12 +15,18 @@ class Card extends React.Component {
           tech2: 'Node.js/Express',
           tech3: 'PostgreSQL',
           tech4: 'AWS(EC2)',
-          cardImage: 'https://imageportfolio.s3.amazonaws.com/aboutMe.jpg',
+          cardImage: 'https://imageportfolio.s3.amazonaws.com/vayKay8.png',
+          link: '#',
           images: [
-            "http://imageportfolio.s3.amazonaws.com/night_hill.jpg",
-            "http://imageportfolio.s3.amazonaws.com/night_hill.jpg",
-            "http://imageportfolio.s3.amazonaws.com/night_hill.jpg",
-            "http://imageportfolio.s3.amazonaws.com/night_hill.jpg",
+            'https://imageportfolio.s3.amazonaws.com/vayKay1.png',
+            'https://imageportfolio.s3.amazonaws.com/vayKay2.png',
+            'https://imageportfolio.s3.amazonaws.com/vayKay3.png',
+            'https://imageportfolio.s3.amazonaws.com/vayKay4.png',
+            'https://imageportfolio.s3.amazonaws.com/vayKay5.png',
+            'https://imageportfolio.s3.amazonaws.com/vayKay6.png',
+            'https://imageportfolio.s3.amazonaws.com/vayKay7.png',
+            'https://imageportfolio.s3.amazonaws.com/vayKay8.png',
+            'https://imageportfolio.s3.amazonaws.com/vayKay9.png',
           ],
           info: [
             '● Scaled microservice from a maximum throughput of 500 RPS and average latency of 780ms to over 1000 RPS at average latency of 213ms.',
@@ -36,12 +42,19 @@ class Card extends React.Component {
           tech2: 'Node.js/Express',
           tech3: 'MongoDB',
           tech4: 'Jest/Enzyme',
-          cardImage: 'http://imageportfolio.s3.amazonaws.com/night_hill.jpg',
+          cardImage: 'https://imageportfolio.s3.amazonaws.com/munch1.png',
+          link: 'https://www.youtube.com/',
           images: [
-            "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg",
-            "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg",
-            "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg",
-            "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg",
+            'https://imageportfolio.s3.amazonaws.com/munch1.png',
+            'https://imageportfolio.s3.amazonaws.com/munch2.png',
+            'https://imageportfolio.s3.amazonaws.com/munch3.png',
+            'https://imageportfolio.s3.amazonaws.com/munch4.png',
+            'https://imageportfolio.s3.amazonaws.com/munch5.png',
+            'https://imageportfolio.s3.amazonaws.com/munch6.png',
+            'https://imageportfolio.s3.amazonaws.com/munch7.png',
+            'https://imageportfolio.s3.amazonaws.com/munch8.png',
+            'https://imageportfolio.s3.amazonaws.com/munch9.png',
+            'https://imageportfolio.s3.amazonaws.com/munch10.png',
           ],
           info: [
             '● Built dynamic front-end React application using webpack for bundling, CSS-modules to handle name-spacing collisions, and AWS S3 to serve images.',
@@ -51,21 +64,34 @@ class Card extends React.Component {
           ],
         },
         {
-          name: 'Travel Notes',
-          tech1: 'React.js',
-          tech2: 'Node.js/Express',
-          tech3: 'mLab/MongoDB',
-          tech4: 'Heroku',
-          cardImage: 'https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg',
+          name: 'Kena.ai',
+          tech1: 'jQuery',
+          tech2: 'AWS(Api Gateway & S3)',
+          tech3: 'OSMD/Vexflow Library',
+          tech4: 'Mobile Responsive',
+          cardImage: 'https://imageportfolio.s3.amazonaws.com/kTitle.png',
+          link: 'https://www.kena.ai/press',
           images: [
-            "https://imageportfolio.s3.amazonaws.com/project-b.jpg",
-            "https://imageportfolio.s3.amazonaws.com/project-b.jpg",
-            "https://imageportfolio.s3.amazonaws.com/project-b.jpg",
-            "https://imageportfolio.s3.amazonaws.com/project-b.jpg",
+            'https://imageportfolio.s3.amazonaws.com/Link10.png',
+            'https://imageportfolio.s3.amazonaws.com/Link11.png',
+            'https://imageportfolio.s3.amazonaws.com/Link12.png',
+            'https://imageportfolio.s3.amazonaws.com/Link13.png',
+            'https://imageportfolio.s3.amazonaws.com/Link14.png',
+            'https://imageportfolio.s3.amazonaws.com/Link15.png',
+            'https://imageportfolio.s3.amazonaws.com/Link16.png',
+            'https://imageportfolio.s3.amazonaws.com/Link17.png',
+            'https://imageportfolio.s3.amazonaws.com/Link18.png',
+            'https://imageportfolio.s3.amazonaws.com/Link19.png',
+            'https://imageportfolio.s3.amazonaws.com/Link20.png',
+            'https://imageportfolio.s3.amazonaws.com/Link21.png',
+            'https://imageportfolio.s3.amazonaws.com/Link22.png',
           ],
           info: [
-            '● Integrated with Flickr API to enable user to customize posts with high-quality images.',
-            '● Deployed application on Heroku using mLab to host a MongoDB database for persistent application storage.',
+            '● Developed, debugged, and deployed webpage features with jQuery, CSS, HTML, and Javascript',
+            '● Created specific UI features to be compatible for desktops, mobile phones, and tablets',
+            '● Collaborated with backend developers for integrating UI and REST APIs',
+            '● Refactored legacy code to optimize loading speed and improve user experience',
+            '● Used AWS to update deployment environment and construct APIs',
           ],
         },
       ],
@@ -76,6 +102,7 @@ class Card extends React.Component {
     this.projectTitle = React.createRef();
     this.clickOutsideModal = this.clickOutsideModal.bind(this);
     this.renderCarousel = this.renderCarousel.bind(this);
+    this.demoLink = this.demoLink.bind(this);
   }
 
   componentDidMount() {
@@ -96,6 +123,19 @@ class Card extends React.Component {
     this.setState({
       isOpen: !isOpen,
       selectProject: e.target.value,
+    });
+  }
+
+  demoLink(e) {
+    // console.log(e.target.value)
+    const { projects } = this.state;
+    projects.filter((projectLink) => {
+      if (projectLink.name === e.target.value) {
+        if (projectLink.link === '#') {
+          alert('unfortunately this project does not have a demo.')
+        }
+        window.location.href = projectLink.link;
+      }
     });
   }
 
@@ -179,7 +219,10 @@ class Card extends React.Component {
                       <p>{projectInfo.tech3}</p>
                       <hr />
                       <p>{projectInfo.tech4}</p>
-                      <button onClick={((e) => this.toggleModal(e))} ref={this.buttons} value={projectInfo.name} type="button">Details</button>
+                      <div className={style.cardButtonContainer}>
+                        <button onClick={((e) => this.toggleModal(e))} value={projectInfo.name} type="button">Details</button>
+                        <button onClick={((e) => this.demoLink(e))} value={projectInfo.name} type="button">Demo</button>
+                      </div>
                     </div>
                   </div>
                 </div>

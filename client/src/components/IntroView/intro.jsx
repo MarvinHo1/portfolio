@@ -5,7 +5,7 @@ class IntroPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      list: [' ', 'a fullstack software engineer ', 'adepted with various frameworks', 'skilled with different databases', ' a quick learner and team player!'],
+      list: [' ', 'a fullstack software engineer ', 'work with various javascript libraries ', 'skilled with different databases', ' a quick learner and team player!'],
       delLetter: false,
       text: '',
       index: 0,

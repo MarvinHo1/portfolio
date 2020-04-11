@@ -80,6 +80,7 @@ class NavBar extends React.Component {
           <li><a onClick={this.handleAboutScroll}>About</a></li>
           <li><a onClick={this.handleProjectScroll}>Projects</a></li>
           <li><a onClick={this.handleContactScroll}>Contact</a></li>
+          <li><a href="https://imageportfolio.s3.amazonaws.com/Marvin+Ho+Resume.pdf">Resume</a></li>
         </ul>
       );
     }
@@ -105,6 +106,7 @@ class NavBar extends React.Component {
               <li><a onClick={this.handleAboutScroll}>About</a></li>
               <li><a onClick={this.handleProjectScroll}>Projects</a></li>
               <li><a onClick={this.handleContactScroll}>Contact</a></li>
+              <li><a href="https://imageportfolio.s3.amazonaws.com/Marvin+Ho+Resume.pdf">Resume</a></li>
             </ul>
           </div>
         </nav>
