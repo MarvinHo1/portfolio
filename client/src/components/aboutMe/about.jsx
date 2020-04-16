@@ -16,7 +16,7 @@ const AboutMeAnimations = () => {
         <div className={style.aboutGridContainer}>
           <div className={style.picContainer}>
             <Fade left>
-              <img className={style.portfolioPicture} src="https://imageportfolio.s3.amazonaws.com/night_hill.jpg" alt="profile pic" />
+              <img className={style.portfolioPicture} src="https://imageportfolio.s3.amazonaws.com/Marvin+Ho.jpg" alt="profile pic" />
             </Fade>
           </div>
           <div className={style.aboutPageIconContainer}>
@@ -38,7 +38,7 @@ const AboutMeAnimations = () => {
                 <br />
                 <p>Currently, my goals as a software engineer is to work on developing my skills.  I try to read as many articles about following best practices, frameworks, and libraries.  I spend most of my time working on my projects so I can build different components.</p>
                 <br />
-                <p>I enjoy being a software developer because of the potential of innovation and growth when working in the tech space.  I like building, creating, and improving different applications and components.  I am motivated as a software engineer because there is always something to learn and always an area to improve.  The life of a software engineer never gets boring and it brings me joy!</p>
+                <p>I enjoy being a software developer because of the potential of innovation and growth when working in the tech space.  I like building, creating, and improving different applications and components.  I am motivated as a software engineer because there is always something to learn and always an area to improve.  The life of a software engineer never gets boring.</p>
               </div>
             </Fade>
           </div>

@@ -43,7 +43,7 @@ class Card extends React.Component {
           tech3: 'MongoDB',
           tech4: 'Jest/Enzyme',
           cardImage: 'https://imageportfolio.s3.amazonaws.com/munch1.png',
-          link: 'https://www.youtube.com/',
+          link: 'https://youtu.be/pNj89H0Q15c',
           images: [
             'https://imageportfolio.s3.amazonaws.com/munch1.png',
             'https://imageportfolio.s3.amazonaws.com/munch2.png',
@@ -66,7 +66,7 @@ class Card extends React.Component {
         {
           name: 'Kena.ai',
           tech1: 'jQuery',
-          tech2: 'AWS(Api Gateway & S3)',
+          tech2: 'AWS(API Gateway & S3)',
           tech3: 'OSMD/Vexflow Library',
           tech4: 'Mobile Responsive',
           cardImage: 'https://imageportfolio.s3.amazonaws.com/kTitle.png',
@@ -220,7 +220,7 @@ class Card extends React.Component {
                       <hr />
                       <p>{projectInfo.tech4}</p>
                       <div className={style.cardButtonContainer}>
-                        <button onClick={((e) => this.toggleModal(e))} value={projectInfo.name} type="button">Details</button>
+                        <button onClick={((e) => this.toggleModal(e))} value={projectInfo.name} type="button">Info</button>
                         <button onClick={((e) => this.demoLink(e))} value={projectInfo.name} type="button">Demo</button>
                       </div>
                     </div>
