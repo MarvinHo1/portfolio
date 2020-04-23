@@ -535,6 +535,7 @@ padding-right: 0px;
 
 .modal {
   height: 43rem;
+  width: 65rem;
   max-width: 100%;
   /* min-width: 880px; */
   border-color: #e6e6e6;
@@ -1967,7 +1968,7 @@ and (orientation: landscape)  {
 /**********************************************Smartphone Landscape************************************************************************/
 
 @media only screen 
-   and (max-device-width: 823px) 
+   and (max-device-width: 1000px) 
    and (orientation: landscape) {
 
   .introComponenet {
